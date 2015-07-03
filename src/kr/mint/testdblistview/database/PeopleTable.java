@@ -113,10 +113,11 @@ public class PeopleTable extends BaseTable
 //    
 //    c.moveToFirst();
 //    
-//    do
+//    while (!c.isAfterLast())
 //    {
 //      result.add(makeBean(c));
-//    } while (c.moveToNext());
+//      c.moveToNext();
+//    }
 //    
 //    c.close();
 //    
@@ -146,10 +147,11 @@ public class PeopleTable extends BaseTable
     
     c.moveToFirst();
     
-    do
+    while (!c.isAfterLast())
     {
       result.add(makeBean(c));
-    } while (c.moveToNext());
+      c.moveToNext();
+    }
     
     c.close();
     
@@ -178,10 +180,11 @@ public class PeopleTable extends BaseTable
 //    
 //    c.moveToFirst();
 //    
-//    do
+//    while (!c.isAfterLast())
 //    {
 //      result.add(makeBean(c));
-//    } while (c.moveToNext());
+//      c.moveToNext();
+//    }
 //    
 //    c.close();
 //    
